@@ -17,6 +17,7 @@ types of non primitive data types(called by reference):
 array
 function
 object
+TO STORE A NUMBER AS BIG INT WE SHOULD ADD A SUFFIX " n " at the end of the numeber .
 
 */ 
 let age = 18
@@ -34,8 +35,25 @@ console.log(typeof score); // number
 console.log(typeof no);   //string
 
 //data type conversion
+
 let valueinNumber = Boolean(no);
-let value = Number(mark); //this is alsobe converted to number data type..
+let value = Number(mark); //this is also be converted to number data type..
+//conversion of a string to a number 
+let abc = "100abc";
+let bcd=Number(abc);
+console.log(bcd); // NaN
+let def = parseInt(abc);
+console.log(def); //123
+
+
+// while using parseint if at any place an alphabet is encountered, it will exit.
+//it will continue to look forward if numeric is encountered.
+//space at starting can be ignored
+//but if space is encountered between numeric values it cannot be ignored, it will exit the program.
+
+// conversion of numbers to boolean
+// if the number is 0, NULL, Nan , then only it is false
+//all non zero it is true.
 console.log(typeof valueinNumber);
 console.log( valueinNumber); //33
 
@@ -47,6 +65,7 @@ console.log( value); //Nan=> (not a number)
 //"wkgwi"=>NaN
 //converesion of string to boolean:-
 // if string is empty ("") :-fasle
+// a empty string with a space only is also true.
 //if string is full ("hkfg") :-true 
 // numbers can also be converted into strings. 
 // ************operations************
