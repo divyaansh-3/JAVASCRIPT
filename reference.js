@@ -34,6 +34,7 @@ anothername="parmar"
 console.log(anothername)
 console.log(myname);  
 
+//non primitive data types are allocated a memeory in the heap and a direct reference of the variable is given to variable it is assigned to.
 
 let userone={
     email: "vjfwg@gmail.com",

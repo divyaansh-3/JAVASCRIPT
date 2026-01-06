@@ -2,6 +2,7 @@
 //rather use ` `sign , as it provides placeholders whose valuees can be filled at the specified positions.
 const name = "divyaansh"
 const repocount=35;
+console.log(typeof name);
 console.log(`my name is ${name} and my repocount is ${repocount}`);
 //another way of declaring a string is :-
 const gamename= new String('parmar')

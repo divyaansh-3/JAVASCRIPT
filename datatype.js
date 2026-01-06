@@ -110,4 +110,11 @@ console.log(null==undefined); // null is only equal to undefiend.
 
   console.log("2" == 2);  // true
   console.log("2"===2);    //false because first one is string and second is number
+
+
+  /* in the memory, a space is created inside the stack called as GEC ("GLOBAL EXECUTION CONTEXT")
+  and inside the gec there is a partition , one is called the creation phase and the other one is the execution phase.
+  if any function is called then outside the GEC a space is allocated to EC("EXECUTION CONTEXT OF THE FUNCTION");
+  ONCE THE PROGRAM IS EXECUTED THE GEC AND EC IS deallocated.
+  */
   
