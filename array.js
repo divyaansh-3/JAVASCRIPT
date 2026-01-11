@@ -78,3 +78,59 @@ console.log(a);
 // for getting the last occurance we have another method:- lastindexof();
 
 //includes():- returns true or false if the element is present inside the array which is passed as a parameter.
+
+/*Function
+
+A function is a block of code that performs a task and is not associated with any object or class instance.
+
+🔹 Method
+
+A method is a function that is associated with a class or object and typically operates on its data. */
+
+// there are some special in built methods of array which use callback functions:-
+// sort,map,filter,findindex,reduce,some,every,find
+
+//map
+
+let numbers =[1,4,9,16];
+let result = numbers.map(x=> Math.sqrt(x));//using arrow functions.
+/*can also be written as:-
+function mapping(x){
+return Math.sqrt(x);
+}
+let result = numbers.map(mapping);
+ */
+console.log(numbers);
+console.log(result);  
+
+//filter method returns a new by filtering the previous array
+
+let age=[23,4,5,67,89];
+let res= age.filter(x=> (x>18)?true:false);
+console.log(age);
+console.log(res);
+
+//reduce method wont return a new array rather reduce the whole array into a single value and return it as output
+let num=[];
+
+let ans= num.length==0?0:num.reduce((total,x)=> total*x ,1)//total contains the sum and o is initial value of total;
+console.log(ans);
+
+//some method returns true or false 
+let score=[85,72,90,67];
+let hasgradeA= score.some((x)=>x>85);//even if one of the elements in score i gretaer than 85 it will return true;
+console.log(hasgradeA);
+
+let hasGradeA=score.every((x)=>x>85);//returns true if all the elements are greater than 85 in the array.
+console.log(hasGradeA);
+
+//find and findindex
+
+let res1= score.find((x)=> x>85);// returns the first element which satisfies the condition
+console.log(res1);
+let res2 =score.findIndex((x)=>x>85);// returns the index of the first element which satisfies the condition.
+console.log(res2);
+// sort
+ let fruits= ["banana","apple","guava","pear"];
+ console.log(fruits);
+ console.log(fruits.sort());
