@@ -13,3 +13,22 @@ for ( i=0;i<ar.length;i++){
         console.log(ar[i][j]);
     }
 }
+let arr = [
+    [
+        [10,20],[20,30]
+    ],
+    [
+        [30,40],[50,60]
+    ]
+];
+
+for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr[i].length;j++){
+        for(let k=0;k<arr[i][j].length;k++){
+            console.log(arr[i][j][k]);
+        }
+    }
+}
+
+// so what happens here is, since it is a three dimensional array, the first iterator i cretaes two blocks
+// and store a reference of the jth elements, then the jth is still divided into two and they store the refernce to the kth elements.
